@@ -40,4 +40,5 @@ for (var i=0; i<information.length; i++){
 	}
 	awesomeAverage = awesomeTotal / programmers; //find average awesomeIndex
 }
-$('#awesome-index').text(awesomeAverage); //pass average to HTML file
+
+document.getElementById('awesome-index').innerHTML =  awesomeAverage;
