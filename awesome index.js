@@ -1,4 +1,4 @@
-var information = [
+var information = [ //given array of information
 {
 name: 'Trinity',
 occupation: 'programmer',
@@ -34,11 +34,12 @@ var awesomeAverage = 0;
 
 //find the sum and number of people with awesomeIndex
 for (var i=0; i<information.length; i++){
-	if (information[i].occupation === 'programmer'){
-		    awesomeTotal += information[i].awesomeIndex;
-		    programmers++;
+	if (information[i].occupation === 'programmer'){ //if the person is a programmer
+		    awesomeTotal += information[i].awesomeIndex; //then add their awesomeIndex to awesomeTotal
+		    programmers++; //increase programmers counter by 1
 	}
-	awesomeAverage = awesomeTotal / programmers; //find average awesomeIndex
+	awesomeAverage = awesomeTotal / programmers; //calculate average awesomeIndex
 }
 
+//add awesomeAverage to html element id 'awesome-index'
 document.getElementById('awesome-index').innerHTML =  awesomeAverage;
